@@ -12,8 +12,10 @@ public class TitleGenerator {
 
 	public String generate() {
 		StringBuilder builder = new StringBuilder();
-		for (PartOfSpeech partOfSpeech : partOfSpeechList) {
-			if (partOfSpeech.isSpaceNeededBefore()) {
+
+		for (int i = 0; i < partOfSpeechList.size(); i++) {
+			PartOfSpeech partOfSpeech = partOfSpeechList.get(i);
+			if (i != 0 && partOfSpeech.isSpaceNeededBefore()) {
 				builder.append(" ");
 			}
 			builder.append(partOfSpeech.getRandom());

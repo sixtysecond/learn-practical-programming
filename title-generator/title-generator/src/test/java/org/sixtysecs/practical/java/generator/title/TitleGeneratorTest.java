@@ -27,12 +27,12 @@ public class TitleGeneratorTest {
 	}
 
 	@Test
-	public void spacesBeforeWordsTest() {
+	public void spacesBeforeNotFirstWordsTest() {
 		List<PartOfSpeech> list = new ArrayList<PartOfSpeech>();
 		list.add(PartOfSpeech.THE);
 		list.add(PartOfSpeech.TALE);
 		String title = new TitleGenerator(list).generate();
-		assertEquals(" the tale", title);
+		assertEquals("the tale", title);
 	}
 
 	@Test
@@ -42,7 +42,7 @@ public class TitleGeneratorTest {
 		list.add(PartOfSpeech.POSSESSIVE);
 		list.add(PartOfSpeech.TALE);
 		String title = new TitleGenerator(list).generate();
-		assertEquals(" the's tale", title);
+		assertEquals("the's tale", title);
 	}
 
 }

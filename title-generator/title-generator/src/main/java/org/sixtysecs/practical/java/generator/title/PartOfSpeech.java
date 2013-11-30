@@ -19,6 +19,8 @@ public enum PartOfSpeech {
 	PUNCTUATION(FileUtil.listFromFile("src/main/resources/punctuation.txt")), //
 	LAST_NAME(FileUtil.listFromFile("src/main/resources/lastname.txt")), //
 	VERB(FileUtil.listFromFile("src/main/resources/verb.txt")), //
+	
+
 
 	// COMMON PUNCTUATION
 	COLON(Arrays.asList(":"), false), //

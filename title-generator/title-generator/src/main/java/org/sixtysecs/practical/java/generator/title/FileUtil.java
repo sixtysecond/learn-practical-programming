@@ -24,7 +24,7 @@ public class FileUtil {
 		try {
 			s = new Scanner(new File(filePath));
 			while (s.hasNext()) {
-				String string = s.next();
+				String string = s.nextLine();
 				if (!string.isEmpty()) {
 					set.add(string);
 				}
@@ -39,4 +39,26 @@ public class FileUtil {
 		return new ArrayList<String>(set);
 	}
 
+	public static List<String> listFromFile(String... filePaths) {
+		Set<String> set = new HashSet<String>();
+		Scanner s = null;
+		try {
+			for (String filePath : filePaths) {
+				s = new Scanner(new File(filePath));
+				while (s.hasNext()) {
+					String string = s.nextLine();
+					if (!string.isEmpty()) {
+						set.add(string);
+					}
+				}
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} finally {
+			if (s != null) {
+				s.close();
+			}
+		}
+		return new ArrayList<String>(set);
+	}
 }

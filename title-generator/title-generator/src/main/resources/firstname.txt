@@ -112,7 +112,7 @@ Jennifer
 Jeremiah
 Jeronimo
 Jesus
-JimeMariaMaria
+Jime
 Joaquin
 John
 Jose
@@ -141,7 +141,6 @@ Logan
 London
 Lucas
 Lucia
-LuciaXimena
 Luis
 Luiza
 Lukas
@@ -194,7 +193,7 @@ Riya
 Robert
 Rodrigo
 Rohan
-RomiSofia
+Romi
 Rosalie
 Ruhi
 Ryan
@@ -224,5 +223,5 @@ Valeria
 Vicente
 Victoria
 William
-XimeCamila
+Xime
 Zoe
